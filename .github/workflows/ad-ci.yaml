@@ -92,6 +92,6 @@ jobs:
       run: |
         git config --global user.email "nagarajudev9@gmail.com"
         git config --global user.name "Nagaraju Devulapalli"
-        git add kubernetes/productcatalog/deploy.yaml
+        git add kubernetes/ad/deploy.yaml
         git commit -m "[CI]: Update ad image tag"
         git push origin HEAD:main -f
