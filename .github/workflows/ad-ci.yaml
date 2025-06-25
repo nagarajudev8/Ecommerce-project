@@ -23,12 +23,12 @@ jobs:
 
     - name: Build with Maven
       run: |
-        cd src/product-catalog
+        cd src/ad
         mvn clean install -DskipTests
 
     - name: Run Unit Tests
       run: |
-        cd src/product-catalog
+        cd src/ad
         mvn test
 
   code-quality:
@@ -46,7 +46,7 @@ jobs:
 
     - name: Run Checkstyle (or use SpotBugs/PMD)
       run: |
-        cd src/product-catalog
+        cd src/ad
         mvn checkstyle:check
 
   docker:
