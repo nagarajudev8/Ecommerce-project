@@ -22,14 +22,14 @@ jobs:
 
     - name: Install dependencies
       run: |
-        cd src/product-catalog
+        cd src/checkout
         python -m venv venv
         source venv/bin/activate
         pip install -r requirements.txt
 
     - name: Run Unit Tests
       run: |
-        cd src/product-catalog
+        cd src/checkout
         source venv/bin/activate
         pytest
 
@@ -47,7 +47,7 @@ jobs:
 
     - name: Run Linting (flake8)
       run: |
-        cd src/product-catalog
+        cd src/checkout
         pip install flake8
         flake8 .
 
